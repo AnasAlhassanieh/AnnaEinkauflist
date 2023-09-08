@@ -1,0 +1,231 @@
+/* Start Variables */
+:root {
+    --main-color: #74B281;
+    --section-padding: 30px;
+    --section-background: #f6f6f6;
+    --main-duration:0.5s
+  }
+  /* End Variables */
+  /* Start Global Rules */
+  * {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  html{scroll-behavior: smooth;}
+  body {font-family: 'Nunito Sans', sans-serif;}
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+  /* Small */
+  @media (min-width: 768px) {.container {width: 750px;}}
+  /* Medium */
+  @media (min-width: 992px) {.container {width: 970px; }}
+  /* Large */
+  @media (min-width: 1200px) {.container {width: 1170px;}}
+  /* End Global Rules */
+button{
+    border: 0;
+    background-color: transparent;
+}
+  /* Start Our nav*/
+.our-nav{
+    padding-top:60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.our-nav .container .text h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+.our-nav .container .text p{text-align: center;margin: auto;}
+.our-nav .container .nav-container{
+    padding-left: 50px;
+    background-color: #FFFFFF;
+    padding-top:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.our-nav .container .nav-container .serv{
+     text-align: center;
+     width: 250px;
+     height: 200px;
+     box-shadow: 0px 5px 30px 5px rgb(0 0 0 / 11%);
+     margin-bottom: 60px
+}
+.our-nav .container .nav-container .serv:hover{background-color: var(--main-color);color: #FFFFFF; transition: var(--main-duration);} 
+.our-nav .container .nav-container .serv:hover i{color: #FFFFFF;  transition: var(--main-duration);}
+.our-nav .container .nav-container .serv i{
+    padding-top: 75px;
+    font-size: 30px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+}
+.our-nav .container .nav-container .serv h2{
+    padding-bottom: 75px;
+    font-size: 20px;
+    font-weight: 500;
+}
+/* End Our nav*/
+/* Start Our input*/
+.our-input{
+    padding-top:20px;
+}
+.our-input .container{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.our-input .container .input-container{
+    padding-left: 100px;
+    background-color: #FFFFFF;
+    padding-top:50px;
+    display: flex;
+    gap: 5px;
+}
+.our-input .container .input-container div input{
+    color: black;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px;
+    width: 500px;
+}
+.our-input .container .input-container div button{
+    background-color: #74B281;
+    color: white;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px;
+}
+/* End Our list*/
+
+  /* Start Our list*/
+  .our-list{
+    padding-top:20px;
+}
+.our-list .container .text h2{
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.our-list .container .text p{text-align: center;margin: auto;}
+.our-list .container .list-container{
+    padding-left: 100px;
+    background-color: #FFFFFF;
+    padding-top:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.our-list .container .list-container .Item{
+     text-align: center;
+     width: 650px;
+     padding: 10px;
+     box-shadow: 0px 5px 30px 5px rgb(0 0 0 / 11%);
+     margin-bottom: 10px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-radius: 20px;
+}
+.our-list .container .list-container .Item:hover{
+    background-color: var(--main-color);
+    color: #FFFFFF; 
+    transition: var(--main-duration);
+} 
+.our-list .container .list-container .Item div h2{
+   font-size: 20px;
+   font-weight: 500;
+}
+.our-list .container .list-container .Item div button{
+    color: white;
+    border: 0;
+    padding:5px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.our-list .container .list-container .Item div button:first-child i{
+    color: #f44336;
+}
+.our-list .container .list-container .Item div button:hover{
+   background-color:#FFFFFF; transition: var(--main-duration)
+}
+.our-list .container .list-container .Item div button:nth-child(2) i{
+    color: #008CBA;
+ 
+}
+.our-list .container .list-container .Item div button:last-child i{
+    color: #013802;
+
+}
+/* End Our list*/
+
+
+/* Start Our prompt*/
+.our-prompt{
+    padding-top:20px;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    left: 20%;
+}
+.our-prompt .container{
+    
+    text-align: center;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.our-prompt .container .prompt-container{
+    padding-left: 100px;
+    padding: 50px;
+    display: flex;
+    gap: 5px;
+    background-color: #eee;
+}
+.our-prompt .container .prompt-container div prompt{
+    color: black;
+    border-radius: 20px;
+    font-size: 30px;
+    padding: 10px;
+    width: 500px;
+}
+.our-prompt .container .prompt-container div button{
+    background-color: #f44336;
+    color: white;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px;
+}
+.our-prompt .container .prompt-container div input{
+    
+    color: black;
+    border-radius: 20px;
+    font-size: 25px;
+    padding: 10px;
+}
