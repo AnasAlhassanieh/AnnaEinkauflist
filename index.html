@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/solid.css">
+    <link rel="stylesheet" href="css/normaliz.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anna Einkaufsliste</title>
+</head>
+
+<body id="body">
+    <!-- Start unserer Navigationsleiste -->
+    <div class="our-nav">
+        <div class="container">
+            <div class="text">
+                <h2>Anna Einkaufsliste</h2>
+                <p>Hallo Anna, Ich freue mich heute zusammen einkaufen zu gehen!</p>
+            </div>
+            <div class="nav-container">
+                <button class="nav-container" onclick="kaufListe()" >
+                    <div class="serv">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h2>Einkaufswagen</h2>
+                    </div>
+                </button>
+                <button class="nav-container" onclick="gekauftListe()">
+                    <div class="serv">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h2>Gekauft</h2>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Ende unserer Navigationsleiste -->
+
+    <!-- Start unserer Eingabe -->
+    <div class="our-input">
+        <div class="container">
+            <div class="input-container">
+                <div>
+                    <input type="text" id="input" placeholder="Was Willst du heute kaufen?">
+                </div>
+                <div>
+                    <button onclick="add()">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ende unserer Eingabe -->
+
+    <!-- Start unserer Liste -->
+    <div class="our-list">
+        <div class="container">
+            <div class="list-container" id="list-container">
+            </div>
+        </div>
+    </div>
+    <!-- Ende unserer Liste -->
+
+    <!-- JavaScript-Datei einbinden -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
